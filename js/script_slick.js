@@ -1,0 +1,4 @@
+$(function(){
+  $('.slider-for').slick();
+    
+})
