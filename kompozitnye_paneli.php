@@ -15,7 +15,7 @@
 <body>
         <div class="feedback-form">
             <div class="feedback-form__wrap">
-                <form name = "MyForm" id = "callbacks" action = "" method = "post">
+                <form name = "MyForm" id = "callbacks" action="post.php" method="get" enctype="multipart/form-data">
                     <img id="closeForm" src="img/x-mark.png" alt="">
                     <h2>Заказать обратный звонок</h2>
                     <input id="form_email" name="email" type="email" class="form-control" placeholder="Введите адрес электронной почты (обязательно)" required="" data-error="Требуется действующее электронное письмо.">
@@ -33,6 +33,7 @@
                         </div>
                         <div id="formPreview" class="file__preview"></div>
                         <input type="submit" name="btn_submit" id="button_contacts" value="Отправить">
+                        <a href="post.php">send</a>
                     </div>
                 </form>
                 <img id="closeFormFinish" src="img/x-mark.png" alt="">

@@ -21,12 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a2d9a229-14a2-481d-81db-64b3133fc5c8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/.idea/in-fas2.loc.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/mail.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/mail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kompozitnye_paneli.php" beforeDir="false" afterPath="$PROJECT_DIR$/kompozitnye_paneli.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/post.php" beforeDir="false" afterPath="$PROJECT_DIR$/post.php" afterDir="false" />
@@ -71,7 +65,7 @@
       <option name="presentableId" value="Default" />
       <updated>1627452094982</updated>
       <workItem from="1627452096159" duration="5460000" />
-      <workItem from="1627533326881" duration="18950000" />
+      <workItem from="1627533326881" duration="20354000" />
     </task>
     <servers />
   </component>
