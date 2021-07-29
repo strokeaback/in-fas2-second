@@ -18,15 +18,15 @@
                 <form name = "MyForm" id = "callbacks" action = "" method = "post">
                     <img id="closeForm" src="img/x-mark.png" alt="">
                     <h2>Заказать обратный звонок</h2>
-                    <input id="form_email" type="email" class="form-control" placeholder="Введите адрес электронной почты (обязательно)" required="" data-error="Требуется действующее электронное письмо.">
-                    <input id="form_number" type="tel" class="form-control" required="" placeholder="Введите номер телефона (обязательно)">
-                    <input id="form_name" type="text" class="form-control" required="" placeholder="Как к Вам обращаться?">
+                    <input id="form_email" name="email" type="email" class="form-control" placeholder="Введите адрес электронной почты (обязательно)" required="" data-error="Требуется действующее электронное письмо.">
+                    <input id="form_number" name="number" type="tel" class="form-control" required="" placeholder="Введите номер телефона (обязательно)">
+                    <input id="form_name" name="name" type="text" class="form-control" required="" placeholder="Как к Вам обращаться?">
                     <textarea id="form_message" name="text_comment" class="form-control" placeholder="Пожалуйста, оставьте сообщение" rows="4" required="" data-error="Пожалуйста, оставьте нам сообщение."></textarea>
                     <div class="help-block with-errors"></div>
                     <p>Нажимая кнопку «Отправить» вы даете своё согласие на обработку персональных данных в соответствии с Федеральным законом от 27.07.2006 года №152-Ф3 "О персональных данных" на условиях и для целей, определённых в Согласии на обработку персональных данных.*</p>
                     <div class="feedback-button">
                         <div class="input__wrapper">
-                            <input name="file" accept=".jpg, .png, .gif" type="file" name="file" id="input__file" class="input input__file" multiple>
+                            <input name="image" accept=".jpg, .png, .gif" type="file" id="input__file" class="input input__file" multiple>
                             <label for="input__file" class="input__file-button">
                                 <span class="input__file-button-text">Прикрепить файл</span>
                             </label>
