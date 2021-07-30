@@ -33,7 +33,6 @@
                         </div>
                         <div id="formPreview" class="file__preview"></div>
                         <button type="submit" name="btn_submit" id="button_contacts" value="Отправить">Отправить</button>
-                        <a href="post.php">send</a>
                     </div>
                 </form>
                 <img id="closeFormFinish" src="img/x-mark.png" alt="">
