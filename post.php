@@ -20,17 +20,17 @@ $mail->Subject = 'Привет! Это Nurali';
 //Тело письма
 $body = '<h1>Встречайте супер письмо!</h1>';
 
-if(trim(!empty($_POST['form_name']))){
-    $body.='<p><strong>Имя:</strong> '.$_POST['form_name'].'</p>';
+if(trim(!empty($_POST['name']))){
+    $body.='<p><strong>Имя:</strong> '.$_POST['name'].'</p>';
 }
-if(trim(!empty($_POST['form_email']))){
-    $body.='<p><strong>E-mail:</strong> '.$_POST['form_email'].'</p>';
+if(trim(!empty($_POST['email']))){
+    $body.='<p><strong>E-mail:</strong> '.$_POST['email'].'</p>';
 }
-if(trim(!empty($_POST['form_number']))){
-    $body.='<p><strong>Номер:</strong> '.$_POST['form_number'].'</p>';
+if(trim(!empty($_POST['number']))){
+    $body.='<p><strong>Номер:</strong> '.$_POST['number'].'</p>';
 }
-if(trim(!empty($_POST['form_message']))){
-    $body.='<p><strong>Сообщение:</strong> '.$_POST['form_message'].'</p>';
+if(trim(!empty($_POST['text_comment']))){
+    $body.='<p><strong>Сообщение:</strong> '.$_POST['text_comment'].'</p>';
 }
 
 //if (isset($_FILES)) { //если есть файлы в форме

@@ -1,60 +1,60 @@
-$(document).ready(function(){
-    $('#button_contacts').click(function(){
-        var form_name   = $('#form_name').val();
-        var form_number = $('#form_number').val();
-        var form_email   = $('#form_email').val();
-        var form_message = $('#form_message').val();
-        var input__file = $('#input__file').val();
-        $.ajax({
-            url: "post.php",
-            type: "post",
-            dataType: "json",
-            data: {
-                "form_name":   form_name,
-                "form_number": form_number,
-                "form_email":   form_email,
-                "form_message": form_message,
-                "input__file": input__file
-            },
-            success: function(data){
-                $('.messages').html(data.result);
-            }
-        });
-    });
-    //     //Получаем инпут file в переменную
-    //     const formImage = document.getElementById('input__file');
-    //     //Получаем див для превью в переменную
-    //     const formPreview = document.getElementById('formPreview');
-    //
-    //     //Слушаем изменения в инпуте file
-    //     formImage.addEventListener('change', () => {
-    //         uploadFile(formImage.files[0]);
-    //     });
-    //
-    //     function uploadFile(file) {
-    //         // провераяем тип файла
-    //         if (!['image/jpeg', 'image/png', 'image/gif'].includes(file.type)) {
-    //             alert('Разрешены только изображения.');
-    //             formImage.value = '';
-    //             return;
-    //         }
-    //         // проверим размер файла (<2 Мб)
-    //         if (file.size > 2 * 1024 * 1024) {
-    //             alert('Файл должен быть менее 2 МБ.');
-    //             return;
-    //         }
-    //
-    //         var reader = new FileReader();
-    //         reader.onload = function (e) {
-    //             formPreview.innerHTML = `<img src="${e.target.result}" alt="Фото">`;
-    //         };
-    //         reader.onerror = function (e) {
-    //             alert('Ошибка');
-    //         };
-    //         reader.readAsDataURL(file);
-    //     }
-    // });
-});
+// $(document).ready(function(){
+//     $('#button_contacts').click(function(){
+//         var form_name   = $('#form_name').val();
+//         var form_number = $('#form_number').val();
+//         var form_email   = $('#form_email').val();
+//         var form_message = $('#form_message').val();
+//         // var input__file = $('#input__file').val();
+//         $.ajax({
+//             url: "post.php",
+//             type: "post",
+//             dataType: "json",
+//             data: {
+//                 "form_name":   form_name,
+//                 "form_number": form_number,
+//                 "form_email":   form_email,
+//                 "form_message": form_message,
+//                 // "input__file": input__file
+//             },
+//             success: function(data){
+//                 $('.messages').html(data.result);
+//             }
+//         });
+//     });
+//     //     //Получаем инпут file в переменную
+//     //     const formImage = document.getElementById('input__file');
+//     //     //Получаем див для превью в переменную
+//     //     const formPreview = document.getElementById('formPreview');
+//     //
+//     //     //Слушаем изменения в инпуте file
+//     //     formImage.addEventListener('change', () => {
+//     //         uploadFile(formImage.files[0]);
+//     //     });
+//     //
+//     //     function uploadFile(file) {
+//     //         // провераяем тип файла
+//     //         if (!['image/jpeg', 'image/png', 'image/gif'].includes(file.type)) {
+//     //             alert('Разрешены только изображения.');
+//     //             formImage.value = '';
+//     //             return;
+//     //         }
+//     //         // проверим размер файла (<2 Мб)
+//     //         if (file.size > 2 * 1024 * 1024) {
+//     //             alert('Файл должен быть менее 2 МБ.');
+//     //             return;
+//     //         }
+//     //
+//     //         var reader = new FileReader();
+//     //         reader.onload = function (e) {
+//     //             formPreview.innerHTML = `<img src="${e.target.result}" alt="Фото">`;
+//     //         };
+//     //         reader.onerror = function (e) {
+//     //             alert('Ошибка');
+//     //         };
+//     //         reader.readAsDataURL(file);
+//     //     }
+//     // });
+// });
 
 // "use strict"
 //
