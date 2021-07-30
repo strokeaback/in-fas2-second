@@ -1,10 +1,4 @@
-
 <?php
-var_dump($_POST);
-var_dump($_GET);
-var_dump($_FILES);
-
-die();
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -17,11 +11,11 @@ $mail->setLanguage('ru', 'phpmailer/language/');
 $mail->IsHTML(true);
 
 //От кого письмо
-$mail->setFrom('admin@7024.ru', 'Фрилансер по жизни');
+$mail->setFrom('admin@7024.ru', 'Нурали');
 //Кому отправить
 $mail->addAddress('tasshabaev.nurali@mail.ru');
 //Тема письма
-$mail->Subject = 'Привет! Это "Фрилансер по жизни"';
+$mail->Subject = 'Привет! Это Nurali';
 
 //Тело письма
 $body = '<h1>Встречайте супер письмо!</h1>';
@@ -39,12 +33,30 @@ if(trim(!empty($_POST['form_message']))){
     $body.='<p><strong>Сообщение:</strong> '.$_POST['form_message'].'</p>';
 }
 
+//if (isset($_FILES)) { //если есть файлы в форме
+//    foreach ($_FILES as $file_item) {
+//        if (!is_array($file_item['error'])) { //проверяем множественное или нет поле файла
+//            if ($file_item['error'] == UPLOAD_ERR_OK) {
+//                $mail->AddAttachment($file_item['tmp_name'],$file_item['name']);
+//            }
+//        } else {
+//            foreach ($file_item["error"] as $key => $error){
+//                if ($error == UPLOAD_ERR_OK) {
+//                    $tmp_name = $file_item["tmp_name"][$key];
+//                    $name = $file_item["name"][$key];
+//                    $mail->AddAttachment($tmp_name,$name);
+//                }
+//            }
+//        }
+//    }
+//}
+
 //Прикрепить файл
-if (!empty($_FILES['input__file']['tmp_name'])) {
+if (!empty($_FILES['image']['tmp_name'])) {
     //путь загрузки файла
-    $filePath = __DIR__ . "/files/" . $_FILES['input__file']['name'];
+    $filePath = __DIR__ . "/files/" . $_FILES['image']['name'];
     //грузим файл
-    if (copy($_FILES['input__file']['tmp_name'], $filePath)){
+    if (copy($_FILES['image']['tmp_name'], $filePath)){
         $fileAttach = $filePath;
         $body.='<p><strong>Фото в приложении</strong>';
         $mail->addAttachment($fileAttach);
@@ -64,25 +76,11 @@ $response = ['message' => $message];
 
 header('Content-type: application/json');
 echo json_encode($response);
+?>
 
+<?php
 //var_dump($_POST);
-//if (isset($_FILES)) { //если есть файлы в форме
-//    foreach ($_FILES as $file_item) {
-//        if (!is_array($file_item['error'])) { //проверяем множественное или нет поле файла
-//            if ($file_item['error'] == UPLOAD_ERR_OK) {
-//                $mail->AddAttachment($file_item['tmp_name'],$file_item['name']);
-//            }
-//        } else {
-//            foreach ($file_item["error"] as $key => $error){
-//                if ($error == UPLOAD_ERR_OK) {
-//                    $tmp_name = $file_item["tmp_name"][$key];
-//                    $name = $file_item["name"][$key];
-//                    $mail->AddAttachment($tmp_name,$name);
-//                }
-//            }
-//        }
-//    }
-//}
+
 
 //die();
 
@@ -125,8 +123,7 @@ echo json_encode($response);
 //        mail($mail_to, $subject, $message, $headers);
 //    }
 //
-//?>
-<!---->
+?>
 <?php
 ///* Здесь проверяется существование переменных */
 //if (isset($_POST['#form_name'])) {$phone = $_POST['#form_name'];}
