@@ -21,16 +21,13 @@
   <component name="ChangeListManager">
     <list default="true" id="a2d9a229-14a2-481d-81db-64b3133fc5c8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kompozitnye_paneli.php" beforeDir="false" afterPath="$PROJECT_DIR$/kompozitnye_paneli.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post.php" beforeDir="false" afterPath="$PROJECT_DIR$/post.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/phpmailer/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -47,7 +44,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../formsend.loc" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../emailer" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -65,7 +62,8 @@
       <option name="presentableId" value="Default" />
       <updated>1627452094982</updated>
       <workItem from="1627452096159" duration="5460000" />
-      <workItem from="1627533326881" duration="20354000" />
+      <workItem from="1627533326881" duration="20703000" />
+      <workItem from="1627559958368" duration="15000" />
     </task>
     <servers />
   </component>
@@ -85,10 +83,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1627541458621">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1627559971628">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1627541458621" />
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1627559971628" />
     <state x="492" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1627457134435">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
