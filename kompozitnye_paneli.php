@@ -34,9 +34,6 @@
                         </div>
                         <button type="submit" name="btn_submit" id="button_contacts" value="Отправить">Отправить</button>
                     </div>
-                    <div class="form__item">
-<!--                    <div id="formPreview" class="file__preview"></div>-->
-                    </div>
                 </form>
                 <img id="closeFormFinish" src="img/x-mark.png" alt="">
                 <span class="feedback-finish">Спасибо за обращение! <br>Мы перезвоним Вам в ближайшее время.</span>
