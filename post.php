@@ -18,7 +18,8 @@ $mail->addAddress('tasshabaev.nurali@mail.ru');
 $mail->Subject = 'Привет! Это Nurali';
 
 //Тело письма
-$body = '<h1>Встречайте супер письмо!</h1>';
+//$body = '<h1>Встречайте супер письмо!</h1>';
+$body = '';
 
 if(trim(!empty($_POST['email']))){
     $body.='<p><strong>E-mail:</strong> '.$_POST['email'].'</p>';

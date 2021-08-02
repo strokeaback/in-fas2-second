@@ -26,7 +26,8 @@
                     <p>Нажимая кнопку «Отправить» вы даете своё согласие на обработку персональных данных в соответствии с Федеральным законом от 27.07.2006 года №152-Ф3 "О персональных данных" на условиях и для целей, определённых в Согласии на обработку персональных данных.*</p>
                     <div class="feedback-button">
                         <div class="input__wrapper">
-                            <input name="image" accept=".jpg, .png, .gif" type="file" id="input__file" class="input input__file" multiple>
+<!--                            <input name="image" accept=".jpg, .png, .gif" type="file" id="input__file" class="input input__file" multiple>-->
+                            <input name="image" accept="" type="file" id="input__file" class="input input__file" multiple>
                             <label for="input__file" class="input__file-button">
                                 <span class="input__file-button-text">Прикрепить файл</span>
                             </label>
