@@ -1312,9 +1312,6 @@ hr {
     max-width: 100px;
     padding: 10px 0px 0px 0px;
 }
-.file__preview img {
-    max-width: 100%;
-}
 
 .feedback-form__wrap p {
     line-height: 20px;
